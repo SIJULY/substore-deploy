@@ -4,7 +4,7 @@ Sub-Store Docker One-Click Deploy
 
 无需繁琐的手动配置，通过简单的交互式脚本，即可在 VPS 上快速搭建带有自动 HTTPS（Let’s Encrypt）支持的 Sub-Store 服务。
 
-⸻
+⸻⸻⸻⸻
 
 ✨ 特性（Features）
 	•	🐳 纯净环境：基于 Docker 容器化部署，不污染宿主机环境，易于卸载。
@@ -15,7 +15,7 @@ Sub-Store Docker One-Click Deploy
 	•	🛡️ 安全加固：自动生成高强度随机 Token 作为后端访问路径。
 	•	⚡ 自动构建：使用 Docker 多阶段构建，自动编译包含 Cloudflare 插件的 Caddy，无需手动安装 Go 环境。
 
-⸻
+⸻⸻⸻⸻
 
 🛠 前置要求（Prerequisites）
 	1.	一台 Linux VPS（Debian / Ubuntu / CentOS 等）。
@@ -23,7 +23,7 @@ Sub-Store Docker One-Click Deploy
 	3.	一个域名，并已解析到服务器 IP。
 	4.	端口开放：请确保服务器防火墙（Security Group）已放行 80 和 443 端口。
 
-⸻
+⸻⸻⸻⸻
 
 🚀 快速开始（Quick Start）
 
