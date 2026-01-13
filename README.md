@@ -6,7 +6,7 @@ Sub-Store Docker One-Click Deploy
 
 🙏感谢sub-store原作者，本人只是作为小白修改了下部署方式，争取做到对小白相对简单的部署！
 
-⸻⸻⸻
+---
 
 ✨ 特性（Features）
 	•	🐳 纯净环境：基于 Docker 容器化部署，不污染宿主机环境，易于卸载。
@@ -17,7 +17,7 @@ Sub-Store Docker One-Click Deploy
 	•	🛡️ 安全加固：自动生成高强度随机 Token 作为后端访问路径。
 	•	⚡ 自动构建：使用 Docker 多阶段构建，自动编译包含 Cloudflare 插件的 Caddy，无需手动安装 Go 环境。
 
-⸻⸻⸻
+---
 
 🛠 前置要求（Prerequisites）
 	1.	一台 Linux VPS（Debian / Ubuntu / CentOS 等）。
@@ -25,7 +25,7 @@ Sub-Store Docker One-Click Deploy
 	3.	一个域名，并已解析到服务器 IP。
 	4.	端口开放：请确保服务器防火墙（Security Group）已放行 80 和 443 端口。
 
-⸻⸻⸻
+---
 
 🚀 快速开始（Quick Start）
 
@@ -34,7 +34,7 @@ Sub-Store Docker One-Click Deploy
 bash <(curl -sL https://raw.githubusercontent.com/SIJULY/substore-deploy/main/install.sh)
 
 
-⸻⸻⸻
+---
 
 📋 安装流程说明
 	1.	环境检测
@@ -52,7 +52,7 @@ bash <(curl -sL https://raw.githubusercontent.com/SIJULY/substore-deploy/main/in
 	4.	自动部署
 	•	脚本将自动生成配置文件并启动相关容器。
 
-⸻⸻⸻
+---
 🔑 配置指南：获取 Cloudflare API Token
 
 如果在安装时选择了 Cloudflare 验证模式（y），请按以下步骤获取 API Token：
@@ -69,8 +69,8 @@ bash <(curl -sL https://raw.githubusercontent.com/SIJULY/substore-deploy/main/in
 
 ⚠️ 重要：
 	•	Token 只会显示一次，请立即复制并在安装脚本中填写。
-
-⸻⸻⸻
+	
+---
 
 📝 访问与使用
 
@@ -82,7 +82,7 @@ https://<你的域名>?api=https://<你的域名>/<自动生成的Token>
 	•	Sub-Store 依赖 URL 中的 Token 进行身份验证。
 	•	请妥善保管该链接，不要泄露给他人。
 
-⸻⸻⸻
+---
 📂 维护与管理
 
 安装目录：
@@ -120,14 +120,14 @@ cd ..
 rm -rf /opt/sub-store-docker
 
 
-⸻⸻⸻
+---
 
 ❓ 常见问题（FAQ）
 
 Q：安装后无法访问，浏览器显示连接超时？
 A：请检查云服务商（如 AWS、Oracle、Azure、阿里云等）的 安全组 / 防火墙 设置，必须允许 TCP 80 和 TCP 443 的入站流量。
 
-⸻⸻⸻
+---
 
 Q：为什么输入了 Cloudflare Token 还是申请失败？
 A：请确认以下几点：
@@ -135,13 +135,13 @@ A：请确认以下几点：
 	•	Token 的 Zone Resources 是否包含当前域名
 	•	域名是否确实托管在 Cloudflare 上
 
-⸻⸻⸻
+---
 
 Q：我使用的是免费二级域名（如 .nyc.mn），可以使用 Cloudflare 模式吗？
 A：不可以，除非你拥有该域名的 Cloudflare 管理权限。
 对于免费二级域名，请在安装时选择 n（不使用 Cloudflare），并确保 80 端口开放。
 
-⸻⸻⸻
+---
 
 🙏 Credits
 	•	Core Project：Sub-Store
