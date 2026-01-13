@@ -30,9 +30,9 @@
 # 🚀 快速开始（Quick Start）
 
 在服务器终端执行以下命令即可启动安装：
-
+```bash
 bash <(curl -sL https://raw.githubusercontent.com/SIJULY/substore-deploy/main/install.sh)
-
+```
 
 ---
 
@@ -86,39 +86,39 @@ https://<你的域名>?api=https://<你的域名>/<自动生成的Token>
 # 📂 维护与管理
 
 安装目录：
-
+```bash
 /opt/sub-store-docker
-
+```
 常用命令
 
 查看运行日志（排查问题首选）
-
+```bash
 cd /opt/sub-store-docker
 docker compose logs -f
-
+```
 停止服务
-
+```bash
 cd /opt/sub-store-docker
 docker compose down
-
+```
 重启服务
-
+```bash
 cd /opt/sub-store-docker
 docker compose restart
-
+```
 更新 Sub-Store 版本
-
+```bash
 cd /opt/sub-store-docker
 docker compose pull
 docker compose up -d
-
+```
 卸载 / 删除
-
+```bash
 cd /opt/sub-store-docker
 docker compose down
 cd ..
 rm -rf /opt/sub-store-docker
-
+```
 
 ---
 
